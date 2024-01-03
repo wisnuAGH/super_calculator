@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\super_calculator.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\super_calculator.dir/objects.a @CMakeFiles\super_calculator.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\super_calculator.dir/objects.a -Wl,--no-whole-archive -o super_calculator.exe -Wl,--out-implib,libsuper_calculator.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\super_calculator.dir\linklibs.rsp
