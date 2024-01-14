@@ -6,28 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/i5 3470/CLionProjects/super_calculator/SuperCalculator.h
-iostream
--
-iomanip
--
-cmath
--
-bitset
--
-sstream
--
-limits
--
-menu.h
-C:/Users/i5 3470/CLionProjects/super_calculator/menu.h
-
-C:/Users/i5 3470/CLionProjects/super_calculator/main.cpp
-iostream
--
-SuperCalculator.h
-C:/Users/i5 3470/CLionProjects/super_calculator/SuperCalculator.h
-
 C:/Users/i5 3470/CLionProjects/super_calculator/menu.cpp
 menu.h
 C:/Users/i5 3470/CLionProjects/super_calculator/menu.h

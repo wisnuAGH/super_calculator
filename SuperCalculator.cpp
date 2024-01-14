@@ -54,25 +54,18 @@ string FloatCalculator::toHex(double value) const {
 }
 
 NumericSystemCalculator::NumericSystemCalculator(CalculatorBase* calc) : calculator(calc) {}
-
-void NumericSystemCalculator::addition(double a, double b) const {
-    cout << "Addition: " << calculator->add(a, b) << endl;
+void NumericSystemCalculator::displayDecimal(double value) const {
+    cout << endl << "Result: " << value << endl;
 }
 
-void NumericSystemCalculator::subtraction(double a, double b) const {
-    cout << "Subtraction: " << calculator->subtract(a, b) << endl;
+void NumericSystemCalculator::displayBinary(double value) const {
+    cout << endl << "Result: " << calculator->toBinary(value) << endl;
 }
 
-void NumericSystemCalculator::multiplication(double a, double b) const {
-    cout << "Multiplication: " << calculator->multiply(a, b) << endl;
+void NumericSystemCalculator::displayOctal(double value) const {
+    cout << endl << "Result: " << calculator->toOctal(value) << endl;
 }
 
-void NumericSystemCalculator::division(double a, double b) const {
-    cout << "Division: " << calculator->divide(a, b) << endl;
-}
-
-void NumericSystemCalculator::displayInDifferentSystems(double value) const {
-    cout << "Binary: " << calculator->toBinary(value) << endl;
-    cout << "Octal: " << calculator->toOctal(value) << endl;
-    cout << "Hexadecimal: " << calculator->toHex(value) << endl;
+void NumericSystemCalculator::displayHexadecimal(double value) const {
+    cout << endl << "Result: " << calculator->toHex(value) << endl;
 }

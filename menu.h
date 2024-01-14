@@ -9,8 +9,10 @@
 
 class Menu {
 public:
+    static void clearScreen();
     static void displayWelcomeMessage();
     static char chooseNumericSystem();
+    static char enterValues(double &value1, double &value2);
     static char chooseOperation();
     static char afterOperation();
 };

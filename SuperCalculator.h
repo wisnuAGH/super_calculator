@@ -47,11 +47,10 @@ private:
 
 public:
     NumericSystemCalculator(CalculatorBase* calc);
-    void addition(double a, double b) const;
-    void subtraction(double a, double b) const;
-    void multiplication(double a, double b) const;
-    void division(double a, double b) const;
-    void displayInDifferentSystems(double value) const;
+    void displayDecimal(double value) const;
+    void displayBinary(double value) const;
+    void displayOctal(double value) const;
+    void displayHexadecimal(double value) const;
 };
 
 
