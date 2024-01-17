@@ -10,62 +10,81 @@ using std::endl;
 using std::string;
 using std::numeric_limits;
 using std::bitset;
+using std::ostringstream;
 using std::oct;
 using std::hex;
-using std::ostringstream;
 using std::uppercase;
+using std::stoi;
 
-double FloatCalculator::add(double a, double b) const {
+int Calculator::add(int a, int b) const {
     return a + b;
 }
 
-double FloatCalculator::subtract(double a, double b) const {
+int Calculator::subtract(int a, int b) const {
     return a - b;
 }
 
-double FloatCalculator::multiply(double a, double b) const {
+int Calculator::multiply(int a, int b) const {
     return a * b;
 }
 
-double FloatCalculator::divide(double a, double b) const {
+int Calculator::divide(int a, int b) const {
     if (b != 0) {
         return a / b;
     } else {
         cerr << "Error: Division by zero!" << endl;
-        return numeric_limits<double>::quiet_NaN();
+        return numeric_limits<int>::min(); // Returning a special value for error
     }
 }
 
-string FloatCalculator::toBinary(double value) const {
-    bitset<64> bits(*reinterpret_cast<uint64_t*>(&value));
+string Calculator::toBinary(int value) const {
+    bitset<32> bits(value);
     return bits.to_string();
 }
 
-string FloatCalculator::toOctal(double value) const {
+string Calculator::toOctal(int value) const {
     ostringstream oss;
-    oss << oct << static_cast<int>(value);
+    oss << oct << value;
     return oss.str();
 }
 
-string FloatCalculator::toHex(double value) const {
+string Calculator::toHex(int value) const {
     ostringstream oss;
-    oss << hex << uppercase << *reinterpret_cast<uint64_t*>(&value);
+    oss << hex << uppercase << value;
     return oss.str();
+}
+
+int Calculator::fromBinary(const std::string& binaryNum) const {
+    std::bitset<32> bits(binaryNum);
+    return static_cast<int>(bits.to_ulong());
+}
+
+int Calculator::fromOctal(const std::string& octalNum) const {
+    int result;
+    std::istringstream(octalNum) >> oct >> result;
+    return result;
+}
+
+int Calculator::fromHex(const std::string& hexNum) const {
+    int result;
+    std::istringstream(hexNum) >> hex >> result;
+    return result;
 }
 
 NumericSystemCalculator::NumericSystemCalculator(CalculatorBase* calc) : calculator(calc) {}
-void NumericSystemCalculator::displayDecimal(double value) const {
+
+void NumericSystemCalculator::displayDecimal(int value) const {
     cout << endl << "Result: " << value << endl;
 }
 
-void NumericSystemCalculator::displayBinary(double value) const {
+void NumericSystemCalculator::displayBinary(int value) const {
     cout << endl << "Result: " << calculator->toBinary(value) << endl;
 }
 
-void NumericSystemCalculator::displayOctal(double value) const {
+void NumericSystemCalculator::displayOctal(int value) const {
     cout << endl << "Result: " << calculator->toOctal(value) << endl;
 }
 
-void NumericSystemCalculator::displayHexadecimal(double value) const {
+void NumericSystemCalculator::displayHexadecimal(int value) const {
     cout << endl << "Result: " << calculator->toHex(value) << endl;
 }

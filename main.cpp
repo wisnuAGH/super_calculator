@@ -4,6 +4,7 @@
 using std::cout;
 using std::cin;
 using std::endl;
+using std::string;
 
 int main() {
     do {
@@ -11,19 +12,29 @@ int main() {
         Menu::displayWelcomeMessage();
 
         char systemChoice = Menu::chooseNumericSystem();
-        CalculatorBase *calculator;
+        Calculator calculator;
+
+        string input1, input2;
+        Menu::enterValues(input1, input2);
+
+        int value1, value2;
+
         switch (systemChoice) {
-            case '1':
-                calculator = new FloatCalculator();  // decimal
+            case '1':   // decimal
+                value1 = stoi(input1);
+                value2 = stoi(input2);
                 break;
-            case '2':
-                calculator = new FloatCalculator();  // TODO: binary
+            case '2':   // binary
+                value1 = calculator.fromBinary(input1);
+                value2 = calculator.fromBinary(input2);
                 break;
-            case '3':
-                calculator = new FloatCalculator();  // TODO: octal
+            case '3':   // octal
+                value1 = calculator.fromOctal(input1);
+                value2 = calculator.fromOctal(input2);
                 break;
-            case '4':
-                calculator = new FloatCalculator();  // TODO: hexadecimal
+            case '4':   // hexadecimal
+                value1 = calculator.fromHex(input1);
+                value2 = calculator.fromHex(input2);
                 break;
 
             default:
@@ -31,23 +42,20 @@ int main() {
                 return 1;
         }
 
-        double value1, value2;
-        Menu::enterValues(value1, value2);
-
-        double result;
+        int result;
         char operationChoice = Menu::chooseOperation();
         switch (operationChoice) {
             case '1':
-                result = calculator->add(value1, value2);
+                result = calculator.add(value1, value2);
                 break;
             case '2':
-                result = calculator->subtract(value1, value2);
+                result = calculator.subtract(value1, value2);
                 break;
             case '3':
-                result = calculator->multiply(value1, value2);
+                result = calculator.multiply(value1, value2);
                 break;
             case '4':
-                result = calculator->divide(value1, value2);
+                result = calculator.divide(value1, value2);
                 break;
 
             default:
@@ -55,7 +63,7 @@ int main() {
                 return 1;
         }
 
-        NumericSystemCalculator numericCalc(calculator);
+        NumericSystemCalculator numericCalc(&calculator);
         switch (systemChoice) {
             case '1': // Decimal
                 numericCalc.displayDecimal(result);
@@ -73,12 +81,14 @@ int main() {
 
         char exitChoice = Menu::afterOperation();
         if (exitChoice == '1') {
-            // pass
+            // back to loop
         } else {
-            delete calculator;
             cout << "Exiting program." << endl;
 
             return 0;
         }
     } while (true);
 }
+// TODO:
+//  - display menu after even loop (1,3,5... loop display this)
+//  - handing for bad value input
