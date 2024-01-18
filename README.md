@@ -6,7 +6,7 @@ Super Calculator is a simple calculator application designed for electronics ent
 
 - Perform basic arithmetic operations (addition, subtraction, multiplication, division).
 - Switch between numeric systems: decimal, binary, octal, hexadecimal.
-- User-friendly interface with a menu for easy navigation.
+- Terminal-based interface for easy navigation.
 
 ## 🚀 Getting Started
 
@@ -21,13 +21,13 @@ Super Calculator is a simple calculator application designed for electronics ent
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/super-calculator.git
+   git clone https://github.com/wisnuAGH/super_calculator.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd super-calculator
+   cd super_calculator
 
 3. Compile the source code:
 
@@ -42,10 +42,14 @@ Super Calculator is a simple calculator application designed for electronics ent
 #### For Windows:
 1. Clone the repository or download the ZIP file and extract it to your desired location.
 
+   ```bash
+   git clone https://github.com/wisnuAGH/super_calculator.git
+   ```
+
 2. Open a Command Prompt (CMD) and navigate to the project directory:
 
    ```bash
-   cd path\to\super-calculator
+   cd super_calculator
 
 3. Compile the source code:
 
