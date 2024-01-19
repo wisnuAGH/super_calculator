@@ -7,12 +7,14 @@
 
 #include <iostream>
 
+using std::string;
+
 class Menu {
 public:
     static void clearScreen();
     static void displayWelcomeMessage();
     static char chooseNumericSystem();
-    static char enterValues(double &value1, double &value2);
+    static char enterValues(string &value1, string &value2);
     static char chooseOperation();
     static char afterOperation();
 };

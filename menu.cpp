@@ -7,6 +7,7 @@
 using std::cout;
 using std::cin;
 using std::endl;
+using std::string;
 
 void Menu::clearScreen() {
 #ifdef _WIN32
@@ -34,7 +35,7 @@ char Menu::chooseNumericSystem() {
     return systemChoice;
 }
 
-char Menu::enterValues(double &value1, double &value2) {
+char Menu::enterValues(string &value1, string &value2) {
     cout << endl << "Enter 1st value: ";
     cin >> value1;
     cout << "\nEnter 2nd value: ";
