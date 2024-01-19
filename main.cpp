@@ -90,5 +90,5 @@ int main() {
     } while (true);
 }
 // TODO:
-//  - display menu after even loop (1,3,5... loop display this)
-//  - handing for bad value input
+//  - add conversion option in main
+//  - GTest
