@@ -1,5 +1,5 @@
 //
-// Created by i5 3470 on 03.01.2024.
+// Created by Mikolaj Wisniewski on 03.01.2024.
 //
 
 #ifndef SUPER_CALCULATOR_MENU_H

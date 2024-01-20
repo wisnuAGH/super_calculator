@@ -97,6 +97,9 @@
 		<Unit filename="C:/Users/i5 3470/CLionProjects/super_calculator/menu.h">
 			<Option target="super_calculator"/>
 		</Unit>
+		<Unit filename="C:/Users/i5 3470/CLionProjects/super_calculator/tests/CalculatorTest.cpp">
+			<Option target="super_calculator"/>
+		</Unit>
 		<Unit filename="C:/Users/i5 3470/CLionProjects/super_calculator/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

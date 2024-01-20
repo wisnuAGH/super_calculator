@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/i5 3470/CLionProjects/super_calculator/SuperCalculator.cpp" "C:/Users/i5 3470/CLionProjects/super_calculator/cmake-build-debug/CMakeFiles/super_calculator.dir/SuperCalculator.cpp.obj"
   "C:/Users/i5 3470/CLionProjects/super_calculator/main.cpp" "C:/Users/i5 3470/CLionProjects/super_calculator/cmake-build-debug/CMakeFiles/super_calculator.dir/main.cpp.obj"
   "C:/Users/i5 3470/CLionProjects/super_calculator/menu.cpp" "C:/Users/i5 3470/CLionProjects/super_calculator/cmake-build-debug/CMakeFiles/super_calculator.dir/menu.cpp.obj"
+  "C:/Users/i5 3470/CLionProjects/super_calculator/tests/CalculatorTest.cpp" "C:/Users/i5 3470/CLionProjects/super_calculator/cmake-build-debug/CMakeFiles/super_calculator.dir/tests/CalculatorTest.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

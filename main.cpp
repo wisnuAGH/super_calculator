@@ -1,3 +1,7 @@
+//
+// Created by Mikolaj Wisniewski on 03.01.2024.
+//
+
 #include <iostream>
 #include "SuperCalculator.h"
 

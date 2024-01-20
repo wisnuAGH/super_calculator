@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/i5 3470/CLionProjects/super_calculator/SuperCalculator.cpp
+SuperCalculator.h
+C:/Users/i5 3470/CLionProjects/super_calculator/SuperCalculator.h
+
 C:/Users/i5 3470/CLionProjects/super_calculator/SuperCalculator.h
 iostream
 -
@@ -21,12 +25,6 @@ limits
 -
 menu.h
 C:/Users/i5 3470/CLionProjects/super_calculator/menu.h
-
-C:/Users/i5 3470/CLionProjects/super_calculator/main.cpp
-iostream
--
-SuperCalculator.h
-C:/Users/i5 3470/CLionProjects/super_calculator/SuperCalculator.h
 
 C:/Users/i5 3470/CLionProjects/super_calculator/menu.h
 iostream

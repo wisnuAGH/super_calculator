@@ -200,6 +200,30 @@ menu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\super_calculator.dir\build.make CMakeFiles/super_calculator.dir/menu.cpp.s
 .PHONY : menu.cpp.s
 
+tests/CalculatorTest.obj: tests/CalculatorTest.cpp.obj
+.PHONY : tests/CalculatorTest.obj
+
+# target to build an object file
+tests/CalculatorTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\super_calculator.dir\build.make CMakeFiles/super_calculator.dir/tests/CalculatorTest.cpp.obj
+.PHONY : tests/CalculatorTest.cpp.obj
+
+tests/CalculatorTest.i: tests/CalculatorTest.cpp.i
+.PHONY : tests/CalculatorTest.i
+
+# target to preprocess a source file
+tests/CalculatorTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\super_calculator.dir\build.make CMakeFiles/super_calculator.dir/tests/CalculatorTest.cpp.i
+.PHONY : tests/CalculatorTest.cpp.i
+
+tests/CalculatorTest.s: tests/CalculatorTest.cpp.s
+.PHONY : tests/CalculatorTest.s
+
+# target to generate assembly for a file
+tests/CalculatorTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\super_calculator.dir\build.make CMakeFiles/super_calculator.dir/tests/CalculatorTest.cpp.s
+.PHONY : tests/CalculatorTest.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -218,6 +242,9 @@ help:
 	@echo ... menu.obj
 	@echo ... menu.i
 	@echo ... menu.s
+	@echo ... tests/CalculatorTest.obj
+	@echo ... tests/CalculatorTest.i
+	@echo ... tests/CalculatorTest.s
 .PHONY : help
 
 

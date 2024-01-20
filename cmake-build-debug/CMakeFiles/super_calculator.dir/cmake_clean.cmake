@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/super_calculator.dir/SuperCalculator.cpp.obj"
   "CMakeFiles/super_calculator.dir/main.cpp.obj"
   "CMakeFiles/super_calculator.dir/menu.cpp.obj"
+  "CMakeFiles/super_calculator.dir/tests/CalculatorTest.cpp.obj"
   "libsuper_calculator.dll.a"
   "super_calculator.exe"
   "super_calculator.exe.manifest"
